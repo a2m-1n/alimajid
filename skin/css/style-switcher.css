@@ -1,0 +1,75 @@
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid var(--bg-color-2);
+    background: var(--bg-color-1);
+    z-index: 120;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-color-1);
+    color: var(--bg-color-2);
+    right: 100%;
+    border: 1px solid var(--bg-color-2);;
+    margin-right: 2.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.style-switcher .s-icon{
+    line-height: 40px;
+}
+.style-switcher .style-switcher-toggler{
+    top: 0;
+}
+.style-switcher h4{
+    margin: 0 0 10px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.style-switcher .colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.style-switcher .color-1{
+    background: #f79a0f;
+}
+.style-switcher .color-2{
+    background: rgb(240, 20, 20);
+}
+.style-switcher .color-3{
+    background: #105bd3;
+}
+.style-switcher .color-4{
+    background: #b91490;
+}
+.style-switcher .color-5{
+    background: #20e030;
+}
+.style-switcher .color-6{
+    background: #06daff;
+}
